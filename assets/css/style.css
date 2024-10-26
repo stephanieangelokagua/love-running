@@ -1,14 +1,21 @@
+/* Asterosk widlcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* Header Styles */
 header{
-    
+    background-color: lightcoral;
 }
 
 /* Main Styles */
 main{
-
+    background-color: lightblue;
 }
 
 /* Footer Styles*/
 footer{
-
+    background-color: orange;
 }
