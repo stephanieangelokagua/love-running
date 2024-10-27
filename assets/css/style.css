@@ -20,6 +20,13 @@ body{
 
 }
 
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; /* ideal if there is need for the casing to be changed in future */
+    letter-spacing: 2px; /* Breathing Space between letters*/
+    color: #252525; /* Sets the color of the h1 element so that stands out a little bit from the other links */
+}
+
 /* Header Styles */
 header{
     background-color: #ffffff;
@@ -36,13 +43,6 @@ header{
 header a{
     text-decoration: none;
     color: inherit; /* ensures default styling for link colour is not applied by browser*/
-}
-
-h1{
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase; /* ideal if there is need for the casing to be changed in future */
-    letter-spacing: 2px; /* Breathing Space between letters*/
-    color: #252525; /* Sets the color of the h1 element so that stands out a little bit from the other links */
 }
 
 #menu{
@@ -94,6 +94,29 @@ main{
     margin-top: 47px;
 }
 
+#hero{
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.webp') no-repeat center center/ cover;
+    position: relative;
+}
+
+#cover-text{
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(241, 109, 107, .7); /* alpha value sets the opacity */
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3{
+    color: #ffffff;
+}
+
 /* Footer Styles*/
 #social-networks{
     text-align: center; /* They are basically still fonts */
@@ -143,6 +166,11 @@ main{
     main{
         /* Push main content down to accomodate larger header */
         margin-top: 79px;
+    }
+
+    #cover-text{
+        width: 300px;
+        right: 50px;
     }
 
 }
