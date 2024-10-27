@@ -138,3 +138,10 @@ footer{
 
 }
 
+/* Media query for laptop view*/
+@media screen and (min-width: 992px){
+    #menu a:hover{ /* only for laptops because they have a mouse that can hover over nav elements*/
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
+
