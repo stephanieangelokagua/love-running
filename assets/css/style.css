@@ -28,6 +28,9 @@ header{
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a{
@@ -67,7 +70,23 @@ nav{
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a; 
     display: none; /* now by default the nav bar items are hidden until the user clicks to open them*/
+    top: 100%; /*tells the nav element that it should start at the bottom of its parent*/
 }
+
+/* Nav toggle */
+/* We want the sibling nav element to display when the checkbox is checked */
+#nav-toggle:checked~nav{ /* checked is a pseudo class that indicates when checkboxes are checked*/
+    display: block;
+}
+
+#nav-toggle{
+    display: none; /* dont need the checkbox itself the label achieves the same effect */
+}
+
+.nav-toggle-label{
+    font-size: 2rem;
+}
+
 /* Main Styles */
 main{
     background-color: lightblue;
