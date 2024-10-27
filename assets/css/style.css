@@ -30,8 +30,16 @@ header{
     box-shadow: 0 2px 2px #3a3a3a;
 }
 
+header a{
+    text-decoration: none;
+    color: inherit; /* ensures default styling for link colour is not applied by browser*/
+}
+
 h1{
     font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; /* ideal if there is need for the casing to be changed in future */
+    letter-spacing: 2px; /* Breathing Space between letters*/
+    color: #252525; /* Sets the color of the h1 element so that stands out a little bit from the other links */
 }
 
 /* Main Styles */
