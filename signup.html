@@ -34,7 +34,49 @@
             </nav>
         </header>
         <!-- Main -->
-        <main>Main</main>
+        <main>
+            <section id="signup">
+                <form method="POST" action="https://formdump.codeinstitute.net" id="signup-form">
+                    <h2><i class="fa-solid fa-heart-pulse"></i>LET'S GET YOU SIGNED UP!</h2>
+                    
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" required class="text-input">
+                    <br>
+                    
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" required class="text-input">
+                    <br>
+
+                    <label for="email-address">Email Address</label>
+                    <input type="email" id="email-address" name="email_address" required class="text-input">
+                    
+                    <br>
+
+                    <div class="radio-buttons">
+                        <div>
+                            <label for="road">Road</label>
+                            <input type="radio" id="road" name="running-preference" required checked>
+                        </div>
+                        
+                        <div>
+                            <label for="trail">Trail</label>
+                            <input type="radio" id="trail" name="running-preference">
+                        </div>
+                            
+                        <div>
+                            <label for="both">Both</label>
+                            <input type="radio" id="both" name="running-preference">
+                        </div>
+                    </div>
+                   
+                    <button type="submit" class="join-button">Submit</button>
+                   
+
+                   
+                </form>
+            </section>
+            
+        </main>
         <!-- Footer -->
         <footer>
             <ul id="social-networks">
