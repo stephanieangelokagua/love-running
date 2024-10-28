@@ -304,7 +304,7 @@ main{
     }
 }
 
-@media screen and (min-width: 1200px){}
+@media screen and (min-width: 1200px){
     /* Reasons section */
 
     #benefits{
@@ -332,11 +332,7 @@ main{
     #benefits-physical > div{
         align-self: flex-end;
     }
-
-    
-
-    
-
-
 }
+    
+
 
