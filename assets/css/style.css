@@ -217,6 +217,16 @@ main{
     color: #3a3a3a;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px){   
+    #photos{
+        /* tells the browswer to display the content of the selected element in columns
+        column-count specifies the number of columns that should be used */
+        column-count: 2;
+        column-gap: 0; /* removes gap between columns */
+    }
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px){
     /* Header */
@@ -274,14 +284,27 @@ main{
         width: 75%;
     }
 
+    #photos{
+        column-count: 3;
+        column-gap: 0; 
+    }
+
 }
 
 /* Media query for laptop view*/
 @media screen and (min-width: 992px){
+
     #menu a:hover{ /* only for laptops because they have a mouse that can hover over nav elements*/
         border-bottom: 1px solid #3a3a3a;
     }
 
+    #photos{
+        column-count: 4;
+        column-gap: 0; 
+    }
+}
+
+@media screen and (min-width: 1200px){}
     /* Reasons section */
 
     #benefits{
