@@ -27,6 +27,11 @@ h1, h2, h3{
     color: #252525; /* Sets the color of the h1 element so that stands out a little bit from the other links */
 }
 
+/* Utility class to hide certain elements but still leave them in for search engines*/
+.hidden-heading{
+    display: none;
+}
+
 /* Header Styles */
 header{
     background-color: #ffffff;
