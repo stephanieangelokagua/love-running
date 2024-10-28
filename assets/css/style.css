@@ -190,6 +190,18 @@ main{
     color:#fafafa;
 }
 
+/* Gallery page */
+#photos img{
+    width: 100%;
+    line-height: 1em; /* Prevents issues for alt text when image isnt readable*/
+}
+
+#photos{
+    /* default, images are inline elements and are treated like text
+    text has an automatic line height to vertically space out the lines*/
+    line-height: 0; 
+}
+
 /* Footer Styles*/
 #social-networks{
     text-align: center; /* They are basically still fonts */
