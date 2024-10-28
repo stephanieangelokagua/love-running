@@ -216,6 +216,22 @@ main{
         right: 50px;
     }
 
+    /* Reasons section */
+    #benefits-physical, #benefits-mental{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-mental > div{
+        align-self: flex-end;
+        text-align: end;
+    }
+
+    #benefits-physical > div, #benefits-mental > div{
+        width: 75%;
+    }
+
 }
 
 /* Media query for laptop view*/
@@ -223,5 +239,39 @@ main{
     #menu a:hover{ /* only for laptops because they have a mouse that can hover over nav elements*/
         border-bottom: 1px solid #3a3a3a;
     }
+
+    /* Reasons section */
+
+    #benefits{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits > div{
+        flex:1
+    }
+
+    #benefits-image{
+        order:0
+    }
+
+    #benefits-mental{
+        order: 1;
+    }
+
+
+    #benefits-mental > div{
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div{
+        align-self: flex-end;
+    }
+
+    
+
+    
+
+
 }
 
