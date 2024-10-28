@@ -117,6 +117,32 @@ main{
     color: #ffffff;
 }
 
+#reasons{
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons > h2{
+    font-size: 280%;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+#benefits-physical div, #benefits-mental div{
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+#benefits-physical p, #benefits-mental p{
+    padding: 0 20px;
+}
+
+#benefits-physical hr, #benefits-mental hr{
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
 /* Footer Styles*/
 #social-networks{
     text-align: center; /* They are basically still fonts */
